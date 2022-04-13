@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_baseline_login_24"
+            android:title="Login" />
+
+        <item
+            android:id="@+id/nav_destinations"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Destinations" />
+        <item
+            android:id="@+id/nav_food"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Food" />
+        <item
+            android:id="@+id/nav_events_and_accomodations"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Events and Accommodations" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="About" />
+
+    </group>
+</menu>

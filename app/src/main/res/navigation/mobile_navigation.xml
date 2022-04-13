@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_destinations">
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.moutamid.tourismsimpleapp.fragments.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/nav_destinations"
+        android:name="com.moutamid.tourismsimpleapp.fragments.DestinationsFragment"
+        android:label="Destinations"
+        tools:layout="@layout/fragment_destinations" />
+
+    <fragment
+        android:id="@+id/nav_food"
+        android:name="com.moutamid.tourismsimpleapp.fragments.FoodFragment"
+        android:label="Food"
+        tools:layout="@layout/fragment_food" />
+
+    <fragment
+        android:id="@+id/nav_events_and_accomodations"
+        android:name="com.moutamid.tourismsimpleapp.fragments.Events_and_accommodationsFragment"
+        android:label="Events and accommodations"
+        tools:layout="@layout/fragment_events_and_accommodations" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.moutamid.tourismsimpleapp.fragments.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.moutamid.tourismsimpleapp.fragments.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+
+</navigation>
