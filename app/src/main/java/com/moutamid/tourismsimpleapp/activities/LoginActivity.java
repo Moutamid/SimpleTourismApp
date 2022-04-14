@@ -1,40 +1,38 @@
-package com.moutamid.tourismsimpleapp.fragments;
+package com.moutamid.tourismsimpleapp.activities;
 
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.fxn.stash.Stash;
-import com.moutamid.tourismsimpleapp.databinding.FragmentLoginBinding;
+import com.moutamid.tourismsimpleapp.databinding.ActivityLoginBinding;
 import com.moutamid.tourismsimpleapp.model.UserModel;
 import com.moutamid.tourismsimpleapp.utils.Constants;
 
 import java.util.ArrayList;
-import java.util.ConcurrentModificationException;
 
-public class LoginFragment extends Fragment {
+public class LoginActivity extends AppCompatActivity {
 
-    private FragmentLoginBinding b;
+    private ActivityLoginBinding b;
 
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        b = FragmentLoginBinding.inflate(inflater, container, false);
-        View root = b.getRoot();
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        b = ActivityLoginBinding.inflate(getLayoutInflater());
+        setContentView(b.getRoot());
 
         if (Stash.getBoolean(Constants.IS_LOGGED_IN, false)) {
             b.loginlayout.setVisibility(View.GONE);
             b.logintext.setVisibility(View.VISIBLE);
-            return root;
+            return;
         }
 
         b.loginbtn.setOnClickListener(listener(true));
         b.signupbtn.setOnClickListener(listener(false));
 
-        return root;
+
     }
 
     private View.OnClickListener listener(boolean isLogin) {
@@ -58,24 +56,24 @@ public class LoginFragment extends Fragment {
                             if (model.email.equals(email)) {
                                 if (model.password.equals(password)) {
                                     // LOGIN SUCCESS
-                                    Toast.makeText(requireContext(), "You have been signed in successfully!", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(LoginActivity.this, "You have been signed in successfully!", Toast.LENGTH_SHORT).show();
                                     b.loginlayout.setVisibility(View.GONE);
                                     b.logintext.setVisibility(View.VISIBLE);
                                     Stash.put(Constants.IS_LOGGED_IN, true);
                                     break;
                                 } else
-                                    Toast.makeText(requireContext(), "Password is wrong!", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(LoginActivity.this, "Password is wrong!", Toast.LENGTH_SHORT).show();
                             } else
-                                Toast.makeText(requireContext(), "Email not found!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(LoginActivity.this, "Email not found!", Toast.LENGTH_SHORT).show();
                         }
                     } else
-                        Toast.makeText(requireContext(), "Email not found!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Email not found!", Toast.LENGTH_SHORT).show();
 
                 } else {
                     // SIGN UP SUCCESS
                     users.add(new UserModel(email, password));
                     Stash.put(Constants.USERS_LIST, users);
-                    Toast.makeText(requireContext(), "You have been signed up successfully!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "You have been signed up successfully!", Toast.LENGTH_SHORT).show();
                     b.loginlayout.setVisibility(View.GONE);
                     b.logintext.setVisibility(View.VISIBLE);
                     Stash.put(Constants.IS_LOGGED_IN, true);
@@ -84,5 +82,4 @@ public class LoginFragment extends Fragment {
             }
         };
     }
-
 }

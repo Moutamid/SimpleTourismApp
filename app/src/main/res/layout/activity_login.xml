@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.LoginFragment">
+    tools:context=".activities.LoginActivity">
 
     <LinearLayout
         android:id="@+id/loginlayout"
@@ -58,5 +58,6 @@
         android:text="Congratulations! You are already logged in."
         android:textSize="25sp"
         android:visibility="gone" />
+
 
 </RelativeLayout>
