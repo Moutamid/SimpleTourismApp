@@ -24,10 +24,22 @@
         tools:layout="@layout/fragment_food" />
 
     <fragment
-        android:id="@+id/nav_events_and_accomodations"
-        android:name="com.moutamid.tourismsimpleapp.fragments.Events_and_accommodationsFragment"
-        android:label="Events and accommodations"
-        tools:layout="@layout/fragment_events_and_accommodations" />
+        android:id="@+id/nav_events"
+        android:name="com.moutamid.tourismsimpleapp.fragments.EventsFragment"
+        android:label="Events"
+        tools:layout="@layout/fragment_events" />
+
+    <fragment
+        android:id="@+id/nav_accomodations"
+        android:name="com.moutamid.tourismsimpleapp.fragments.AccommodationsFragment"
+        android:label="Accommodations"
+        tools:layout="@layout/fragment_accommodations" />
+
+    <fragment
+        android:id="@+id/nav_analytics"
+        android:name="com.moutamid.tourismsimpleapp.fragments.AnalyticsFragment"
+        android:label="Analytics"
+        tools:layout="@layout/fragment_analytics" />
 
     <fragment
         android:id="@+id/nav_settings"

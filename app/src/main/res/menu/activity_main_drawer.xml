@@ -18,9 +18,18 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="Food" />
         <item
-            android:id="@+id/nav_events_and_accomodations"
+            android:id="@+id/nav_events"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Events and Accommodations" />
+            android:title="Events" />
+
+        <item
+            android:id="@+id/nav_accomodations"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Accommodations" />
+        <item
+            android:id="@+id/nav_analytics"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Analytics" />
 
         <item
             android:id="@+id/nav_settings"
