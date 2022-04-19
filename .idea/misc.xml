@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Azan Comp/AndroidStudioProjects/TourismSimpleApp/app/src/main/res/drawable/side_nav_bar.xml" value="0.1" />
+        <entry key="..\:/Users/Azan Comp/AndroidStudioProjects/TourismSimpleApp/app/src/main/res/drawable/splash_background.xml" value="0.138" />
         <entry key="..\:/Users/Azan Comp/AndroidStudioProjects/TourismSimpleApp/app/src/main/res/layout/activity_all_items.xml" value="0.2" />
         <entry key="..\:/Users/Azan Comp/AndroidStudioProjects/TourismSimpleApp/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/Azan Comp/AndroidStudioProjects/TourismSimpleApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
@@ -11,7 +13,11 @@
         <entry key="..\:/Users/Azan Comp/AndroidStudioProjects/TourismSimpleApp/app/src/main/res/layout/app_bar_navigation_drawer.xml" value="0.2" />
         <entry key="..\:/Users/Azan Comp/AndroidStudioProjects/TourismSimpleApp/app/src/main/res/layout/content_navigation_drawer.xml" value="0.1" />
         <entry key="..\:/Users/Azan Comp/AndroidStudioProjects/TourismSimpleApp/app/src/main/res/layout/fragment_about.xml" value="0.2" />
+        <entry key="..\:/Users/Azan Comp/AndroidStudioProjects/TourismSimpleApp/app/src/main/res/layout/fragment_accommodations.xml" value="0.2" />
+        <entry key="..\:/Users/Azan Comp/AndroidStudioProjects/TourismSimpleApp/app/src/main/res/layout/fragment_analytics.xml" value="0.2" />
         <entry key="..\:/Users/Azan Comp/AndroidStudioProjects/TourismSimpleApp/app/src/main/res/layout/fragment_destinations.xml" value="0.2" />
+        <entry key="..\:/Users/Azan Comp/AndroidStudioProjects/TourismSimpleApp/app/src/main/res/layout/fragment_events.xml" value="0.2" />
+        <entry key="..\:/Users/Azan Comp/AndroidStudioProjects/TourismSimpleApp/app/src/main/res/layout/fragment_events_and_accommodations.xml" value="0.2" />
         <entry key="..\:/Users/Azan Comp/AndroidStudioProjects/TourismSimpleApp/app/src/main/res/layout/fragment_food.xml" value="0.2" />
         <entry key="..\:/Users/Azan Comp/AndroidStudioProjects/TourismSimpleApp/app/src/main/res/layout/fragment_login.xml" value="0.2" />
         <entry key="..\:/Users/Azan Comp/AndroidStudioProjects/TourismSimpleApp/app/src/main/res/layout/fragment_settings.xml" value="0.2" />

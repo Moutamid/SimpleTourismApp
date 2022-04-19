@@ -163,8 +163,36 @@ public class Brain {
                 " \n" +
                 "Address : Kampung Sitiawan, 32200 Sitiawan, Perak\n"));
 
+        return list;
+    }
+
+    public static ArrayList<DataModel> eventsDataArrayList() {
+        ArrayList<DataModel> list = new ArrayList<>();
+
+        list.add(new DataModel(R.drawable.imgevents, "Marina Island Water Festival", "Marina Island Water Festival is the same concept as Thailand’s water festival which is “Songkran”. The aim of this event is to let people in Malaysia get a chance to experience the fun and joy of water festival without going to Thailand. This event held within April of every two year. Children can play with WATER SLIDE game for FREE at this time, the ENTRANCE for Children below 12 years old will be FREE. \n" +
+                "Winners of challenging games will be rewarded with water balloons.  Participants are advised to Pre-Register for LUCKY DRAW Prizes.\n" +
+                "Sadly due to Covid-19, this event has been postpone until further notice. Address : Frenzy Water Park Marina Island Pangkor, Jalan Utama Marina Island 32200 Perak Malaysia\n" +
+                "\f\n" +
+                "Accommodation\n"));
 
         return list;
     }
 
+    public static ArrayList<DataModel> accommodationsDataArrayList() {
+        ArrayList<DataModel> list = new ArrayList<>();
+
+        list.add(new DataModel(R.drawable.img_1events, "Mornington Hotel", "Address : 27, Jalan Jaya 1, Medan Jaya, 32000 Sitiawan, Perak\n" +
+                "Contact : 05-692 8181\n" +
+                "Price : RM 61"));
+        list.add(new DataModel(R.drawable.img_2events, "Oscar Suites Hotel", "Address : Jalan Lumut, Taman Pegawai, 32000 Sitiawan, Perak\n" +
+                "Contact : 05-691 9858\n" +
+                "Price : RM 80-100"));
+        list.add(new DataModel(R.drawable.img_3events, "Apple Suites Hotel", "Address : 1B, Lorong Tok Perdana, Taman Tok Perdana, 32000 Sitiawan, Perak\n" +
+                "Contact : 05-691 0629\n" +
+                "Price : RM 80-100"));
+        list.add(new DataModel(R.drawable.img_4events, "Rockbund Fishing Chalet", "Address : Marina Island, KM1, Jalan Utama Marina Island, 32200 Lumut, Perak Contact 016-558 0388\n" +
+                "Price : RM 350+\n"));
+
+        return list;
+    }
 }

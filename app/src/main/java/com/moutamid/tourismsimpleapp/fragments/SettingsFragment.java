@@ -30,8 +30,12 @@ public class SettingsFragment extends Fragment {
             startActivity(new Intent(requireActivity(), LoginActivity.class));
         });
 
-        b.notificationss.setOnCheckedChangeListener((compoundButton, b) ->
-                Toast.makeText(requireActivity(), "Success!", Toast.LENGTH_SHORT).show());
+        b.notificationss.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                Toast.makeText(requireActivity(), "Success!", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         return root;
     }

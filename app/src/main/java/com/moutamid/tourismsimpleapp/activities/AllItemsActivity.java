@@ -35,7 +35,10 @@ public class AllItemsActivity extends AppCompatActivity {
 
         if (params.equals(Constants.FOOD))
             tasksArrayList = Brain.foodDataArrayList();
-
+        else if (params.equals(Constants.EVENTS))
+            tasksArrayList = Brain.eventsDataArrayList();
+        else if (params.equals(Constants.ACCOMMODATIONS))
+            tasksArrayList = Brain.accommodationsDataArrayList();
         else tasksArrayList = Brain.topDestinationsDataArrayList();
 
         initRecyclerView();
